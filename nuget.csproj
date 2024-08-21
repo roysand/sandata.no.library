@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <PackageType>Template</PackageType>
-    <Version>1.0.1</Version>
+    <PackageType>Dependency </PackageType>
+    <Version>1.0.3</Version>
     <PackageId>sanddata.no.library</PackageId>
     <Title>ASP.NET Core Sanddata</Title>
     <Company>Sanddata</Company>

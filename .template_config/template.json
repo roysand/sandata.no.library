@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "roy Sand",
+  "classifications": [ ".NET Core", "REST", "API", "Template", "Clean Architecture" ],
+  "description": "Sanddata Template API",
+  "tags": {
+    "language": "C#"
+  },
+  "preferNameDirectory": "true",
+  "identity": "sanddata.no.library",
+  "name": "Sanddata Library",
+  "shortName": "sanddata-lib",
+  "sourceName": "sanddata.no.library",
+  "symbols": {
+    "skipRestore": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "If specified, skips the automatic restore of the project on create.",
+      "defaultValue": "false"
+    },
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net8.0"
+        }
+      ],
+      "defaultValue": "net8.0",
+      "replaces": "{TargetFramework}"
+    }
+  },
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [ "src/.vs/**", ".template_config/**" ]
+        }
+      ]
+    }
+  ]
+}

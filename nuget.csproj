@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IsPackable>true</IsPackable>
+    <PackageOutputPath>.</PackageOutputPath>  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="**\*" Exclude="**\bin\**\*;**\obj\**\*" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <Version>1.0.1</Version>
+    <PackageId>sanddata.no.library</PackageId>
+    <Title>ASP.NET Core Sanddata</Title>
+    <Company>Sanddata</Company>
+    <Authors>Roy Sand</Authors>
+    <Copyright>Sanddata © 2024</Copyright>
+    <Description>A ready-to-use template for C# .Net Core with repositories, services, models mapping, DI and Rest API.</Description>
+    <PackageTags>c#;asp.net;core;template;rest; api</PackageTags>
+    <PackageCopyright>Sanddata © 2024</PackageCopyright>
+    <PackageProjectUrl>https://github.com/roysand/sandata.no.library.git</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/roysand/sandata.no.library.git</RepositoryUrl>
+  </PropertyGroup>
+</Project>
